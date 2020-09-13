@@ -26,7 +26,7 @@
 }
 
 #navlinks li a {
-    color: black;
+    color: white;
     display: block;
     padding: 8px;
     background-color: transparent;
@@ -35,7 +35,7 @@
 
 #navlinks li a:hover {
     text-decoration: none;
-    color: red;
+    color: lightgray;
 }
 
 .header-background {
@@ -46,10 +46,11 @@
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: #ac5c4c;
 }
 
 .image-background {
-    background-image: url("../images/linnen_gray.jpg");
+    /* background-image: url("../images/linnen_red.jpg");
     display: block;
     width: 100%;
     height: 100%;
@@ -57,8 +58,7 @@
     text-decoration: none;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    background-color: #BDC9CB;
+    background-repeat: no-repeat; */
 }
 
 .blok1 {
@@ -66,6 +66,22 @@
     margin-top: 75vh;
     background-color: white;
     border: 1px solid grey;
+}
+
+.blok2 {
+    margin-top: 25px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.blok2 img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-width: 100%;
 }
 
 @media (max-width: 767.98px) {
