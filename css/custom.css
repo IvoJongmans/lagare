@@ -1,19 +1,15 @@
-/* body {
-    background-color: black;
-} */
-
-ul{
-    position: absolute;
-    left: 50px;
-    top: 25px;
-}
-
 .navbar-dark .navbar-toggler {
     border-color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
+}
+
+ul {
+    position: absolute;
+    top: 25px;
+    
 }
 
 .header-background {
