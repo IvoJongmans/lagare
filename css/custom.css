@@ -1,21 +1,51 @@
-.navbar-dark .navbar-toggler {
-    border-color: white;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: white;
-}
-
-ul {
+#navlogo {
+    width: 80px;
     position: absolute;
-    top: 25px;
-    
+    top:0;
+    left: 0;
+}
+
+#menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    margin-top: 4px;
+    display: none;
+}
+
+#navlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navlinks li {
+    float: right;
+}
+
+#navlinks li a {
+    color: black;
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#navlinks li a:hover {
+    text-decoration: none;
+    color: red;
 }
 
 .header-background {
+    position: absolute;
     z-index: -1;
     height: 100vh;
-    margin-top: -56px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .image-background {
@@ -33,13 +63,22 @@ ul {
 
 .blok1 {
     height: 500px;
-    margin-top: -100px;
+    margin-top: 75vh;
     background-color: white;
-    border: 3px solid black;
+    border: 1px solid grey;
 }
 
 @media (max-width: 767.98px) {
     .header-background {
         height: 50vh;
+    }
+    .blok1 {
+        margin-top: 37.5vh;
+    }
+    #navlinks {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
     }
 }
