@@ -1,3 +1,7 @@
 .slide {
     margin-top: 25px;
 }
+
+.slide img {
+    max-height: 940px;
+}
