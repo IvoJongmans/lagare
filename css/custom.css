@@ -1,3 +1,8 @@
+body .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 #menu-icon {
     position: absolute;
     top: 0;
