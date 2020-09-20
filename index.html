@@ -29,10 +29,23 @@
     <ul id="navlinks">
         <li><a href="#home">La Gare 1</a></li>
         <li><a href="#news">La Gare 2</a></li>
-        <li><a href="#download">Download PDF</a></li>
+        <li><a href="#download">Media</a></li>
+        <li><a href="#form">Voorkeuren</a></li>
+    </ul>
+
+    <ul id="navlinks-mobile" style="display: none;">
+        <li><a href="#home">La Gare 1</a></li>
+        <li><a href="#news">La Gare 2</a></li>
+        <li><a href="#download">Media</a></li>
         <li><a href="#form">Voorkeuren</a></li>
     </ul>
     <img id="menu-icon" src="images/menuplaceholder.png" />
+
+    <script>
+        $("#menu-icon").click(function () {
+            $('#navlinks-mobile').toggle();
+        });
+    </script>
 
     <div class="header-background">
         <!-- <div class="image-background"></div> -->
@@ -143,26 +156,26 @@
                     <button type="submit">Download de brochure</button>
                 </form>
             </div>
-       
-      
+
+
             <div class="col-sm-6 text-center">
-     
-                    <button type="submit">Nanopixel #1</button>
-         
+
+                <button type="submit">Nanopixel #1</button>
+
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 text-center">
-           
-                    <button type="submit">Nanopixel #2</button>
-     
+
+                <button type="submit">Nanopixel #2</button>
+
             </div>
-       
-      
+
+
             <div class="col-sm-6 text-center">
-               
-                    <button type="submit">Nanopixel #3</button>
-        
+
+                <button type="submit">Nanopixel #3</button>
+
             </div>
         </div>
     </div>
@@ -231,15 +244,15 @@
             </div>
             <div class="form-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Ja, ik geef toestemming om mijn gegeven te verwerken. U kunt <a href="#avg">hier</a> lezen ....
-                  </label><br /><br />
-                  <div class="invalid-feedback">
-                    U moet toestemming geven om door te kunnen gaan.
-                  </div>
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Ja, ik geef toestemming om mijn gegeven te verwerken. U kunt <a href="#avg">hier</a> lezen ....
+                    </label><br /><br />
+                    <div class="invalid-feedback">
+                        U moet toestemming geven om door te kunnen gaan. <br /><br />
+                    </div>
                 </div>
-            <button type="submit" class="btn btn-primary mb-2">Verstuur</button>
+                <button type="submit" class="btn btn-primary mb-2">Verstuur</button>
         </form>
 
     </div>

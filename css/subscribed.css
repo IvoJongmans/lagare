@@ -1,5 +1,4 @@
-#download button {
-    margin-top: 25px;
+.buttton {
     background-color: #AA4A3C;
     /* font-family: 'Baskervville', serif; */
     /* color: #DDCAB2; */
@@ -12,4 +11,18 @@
     font-size: 13px;
     letter-spacing: 1px;
     width: 100%;
+    margin-top: -10px;
+}
+
+a {
+    color:white;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+div p {
+    padding: 25px;
 }
