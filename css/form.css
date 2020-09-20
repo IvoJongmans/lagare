@@ -4,3 +4,7 @@
     font-family: 'Baskervville', serif;
     color: #DDCAB2;
 }
+
+#form .invalid-feedback {
+    color: yellow;
+}
