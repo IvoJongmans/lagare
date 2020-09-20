@@ -1,0 +1,54 @@
+#menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    margin-top: 4px;
+    margin-right: 4px;
+    display: none;
+}
+
+#navlinks {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navlinks li {
+    float: left;
+}
+
+#navlinks li a {
+    font-family: 'Baskervville', serif;
+    color: #DDCAB2;
+    font-size: 24px;
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#navlinks li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#navlinks-mobile {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navlinks-mobile li a {
+    font-family: 'Baskervville', serif;
+    color: #DDCAB2;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    background-color: transparent;
+    text-decoration: none;
+}
