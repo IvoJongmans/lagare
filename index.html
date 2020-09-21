@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <ul id="navlinks">
+    <!-- <ul id="navlinks">
         <li><a href="#home">La Gare 1</a></li>
         <li><a href="#news">La Gare 2</a></li>
         <li><a href="#download">Media</a></li>
@@ -46,7 +46,7 @@
         $("#menu-icon").click(function () {
             $('#navlinks-mobile').toggle();
         });
-    </script>
+    </script> -->
 
     <div class="container-fluid header-background">
         <!-- <div class="image-background"></div> -->
@@ -54,27 +54,9 @@
             <div class="col-6 mx-auto">
                 <div class="justify-content-center text-center">
                     <div>
-                        <img style="max-width: 100%;" src="images/g.png">
+                        <img style="max-height: 120px; margin-top: -30px;" src="images/lagarelogo.png">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid" id="download">
-        <div class="row">
-            <div class="col-sm-6 text-center">
-                <form method="get" action="boek.pdf">
-                    <button type="submit">Download de brochure</button>
-                </form>
-            </div>
-
-
-            <div class="col-sm-6 text-center">
-
-                <button type="submit">Maak een virtuele walk-in</button>
-
             </div>
         </div>
     </div>
@@ -207,6 +189,53 @@
         </a>
     </div>
 
+    <div class="container-fluid inschrijven" style="margin-top: 25px;">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="title">INSCHRIJVEN</h1>
+                <p class="subtitle">Schrijf je hier in als geinteresseerde. Wilt u meer informatie? 
+                    Neem dan eens een kijkje in onze brochure of doe een ineractieve walk-in! 
+                    Klik op onderstaande links voor meer informatie of schrijf u in via het formulier onderaan de pagina.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="download">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                <form method="get" action="boek.pdf">
+                    <button type="submit">Download de brochure</button>
+                </form>
+            </div>
+
+
+            <div class="col-sm-6 text-center">
+
+                <button type="submit">Appartement A (360)</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="download">
+        <div class="row">
+            <div class="col-sm-6 text-center">
+             
+                    <button type="submit">Appartement B (360)</button>
+                
+            </div>
+
+
+            <div class="col-sm-6 text-center">
+
+                <button type="submit">Appartement C (360)</button>
+
+            </div>
+        </div>
+    </div>
+    
+
+
     <div class="container-fluid" id="form">
 
 
@@ -273,13 +302,13 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                     <label class="form-check-label" for="invalidCheck">
-                        Ja, ik geef toestemming om mijn gegeven te verwerken. U kunt <a href="#avg">hier</a> lezen ....
+                        Ja, ik geef toestemming om mijn gegeven te verwerken. U kunt onze privacy policy <a target="_blank" href="privacypolicy.html">hier</a> lezen.
                     </label><br /><br />
                     <div class="invalid-feedback">
                         U moet toestemming geven om door te kunnen gaan. <br /><br />
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Verstuur</button>
+                <button type="submit" class="btn mb-2">Verstuur</button>
         </form>
 
     </div>
@@ -308,7 +337,14 @@
     </div>
 
     <footer>
-        <p class="text-center">Footer</p>
+        <p class="text-center" style="padding-top: 10px;">&copy;2020 by Jongmans Enterprises | <a style="color: white;" href="privacypolicy.html">Privacy policy</a></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center"><img src="images/footer1.png" / style="max-width: 100%; margin-bottom: 10px; vertical-align: middle;"></div>
+                <div class="col-sm-4 text-center"><img src="images/footer2.webp" / style="max-width: 100%; margin-bottom: 10px; vertical-align: middle;"></div>
+                <div class="col-sm-4 text-center"><img src="images/footer1.png" / style="max-width: 100%; margin-bottom: 10px; vertical-align: middle;"></div>
+            </div>
+        </div>
     </footer>
 
 

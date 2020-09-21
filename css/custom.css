@@ -6,7 +6,7 @@
     bottom: 0; */
     background-color: #AA4A3C;
     z-index: -1;
-    height: 440px;
+    height: 60px;
 }
 
 .image-background {
@@ -55,19 +55,19 @@
 .subtitle {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 100;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 
 .text-semi {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
-    font-size: 12px; 
+    font-size: 14px; 
 }
 .text {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 100;
-    font-size: 12px; 
+    font-size: 14px; 
     line-height: 20px;
 }
 
@@ -81,7 +81,7 @@
 
 @media (max-width: 767.98px) {
     .header-background {
-        height: 340px;
+        height: 60px;
     }
 }
 

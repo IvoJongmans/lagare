@@ -3,13 +3,13 @@
     font-family: 'Baskervville', serif;
     font-size: 28px;
     color: #DDCAB2;
-    height: 100vh;
+    height: 50vh;
     margin-top: 25px;
 
 }
 
 .quote .vertical-center {
-    height: 100vh;
+    height: 50vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
