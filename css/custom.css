@@ -6,7 +6,11 @@
     bottom: 0; */
     background-color: #AA4A3C;
     z-index: -1;
-    height: 60px;
+    height: 150px;
+}
+
+.header-background img {
+    height: 150px;
 }
 
 .image-background {
@@ -81,7 +85,10 @@
 
 @media (max-width: 767.98px) {
     .header-background {
-        height: 60px;
+        height: 120px;
+    }
+    .header-background img {
+        height: 120px;
     }
 }
 

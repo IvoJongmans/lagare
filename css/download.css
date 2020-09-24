@@ -4,9 +4,11 @@
 	border: none;
     padding: 25px;
     color: white;
-    font-family: 'Noto Sans JP', sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Baskervville', serif;
     font-weight: 400;
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 24px;
     letter-spacing: 1px;
     width: 100%;
 }
