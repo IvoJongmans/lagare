@@ -33,8 +33,15 @@
     top: -80px;
 }
 
-.blok2 {
-    margin-top: 25px;
+/* .blok2 {
+    margin-top: 75px;
+} */
+.left-image {
+    margin-top: 75px;
+}
+
+.right-image {
+    margin-top: 75px;
 }
 
 .helper {
@@ -99,6 +106,15 @@
 @media (max-width: 1090px) {
     .col-lg-7 .img-right {
         padding-left: 15px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .right-image {
+        margin-top: 25px;
+    }
+    .right-margin {
+        margin-top: 75px;
     }
 }
 
