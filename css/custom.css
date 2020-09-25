@@ -4,13 +4,15 @@
     left: 0;
     right: 0;
     bottom: 0; */
-    background-color: #AA4A3C;
-    z-index: -1;
-    height: 150px;
+    /* background-color: #WHITE; */
+    /* z-index: -1;
+    height: 75px; */
 }
 
 .header-background img {
-    height: 150px;
+    position: absolute;
+    right: 0px;    
+    height: 75px;
 }
 
 .image-background {
@@ -23,6 +25,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
+}
+
+.overlay {
+    position: absolute;
+    left: 0px;
+    top: -80px;
 }
 
 .blok2 {
@@ -83,6 +91,17 @@
     padding-left: 15px;
 }
 
+.inschrijven {
+    border: 3px solid #AA4A3C;
+    border-bottom: none;
+}
+
+@media (max-width: 1090px) {
+    .col-lg-7 .img-right {
+        padding-left: 15px;
+    }
+}
+
 @media (max-width: 767.98px) {
     .header-background {
         height: 120px;
@@ -92,8 +111,11 @@
     }
 }
 
-@media (max-width: 1090px) {
-    .col-lg-7 .img-right {
-        padding-left: 15px;
+@media (max-width: 380px) {
+    .overlay {
+        position: absolute;
+        left: 0px;
+        top: -40px;
+        height: 60px;
     }
 }
