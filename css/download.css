@@ -8,7 +8,13 @@
     font-family: 'Baskervville', serif;
     font-weight: 400;
     /* font-size: 13px; */
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
     width: 100%;
+    min-height: 86px;
+    vertical-align: middle;
+}
+
+#download button img {
+    height: 36px;
 }
