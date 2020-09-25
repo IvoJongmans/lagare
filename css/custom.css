@@ -122,9 +122,6 @@
     .right-margin {
         margin-top: 75px;
     }
-    .left-image {
-        margin-top: 50px;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -148,5 +145,8 @@
         left: 10px;
         top: -48px;
         height: 110px;
+    }
+    .left-image {
+        margin-top: 50px;
     }
 }
