@@ -33,6 +33,12 @@
     top: -80px;
 }
 
+.logo-overlay {
+    position: absolute;
+    left: 0px;
+    top: -105px;
+}
+
 /* .blok2 {
     margin-top: 75px;
 } */
@@ -116,6 +122,9 @@
     .right-margin {
         margin-top: 75px;
     }
+    .left-image {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -133,5 +142,11 @@
         left: 0px;
         top: -40px;
         height: 60px;
+    }
+    .logo-overlay {
+        position: absolute;
+        left: 10px;
+        top: -48px;
+        height: 110px;
     }
 }
