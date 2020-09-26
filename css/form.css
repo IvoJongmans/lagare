@@ -34,3 +34,17 @@
 #form .btn:hover {
     background-color: #6b2e26;
 }
+
+#form a {
+    color: white;
+    text-decoration: underline;
+}
+
+#form a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#form .hide {
+    display: none;
+}

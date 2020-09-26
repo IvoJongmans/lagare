@@ -13,26 +13,43 @@
 </head>
 
 <body>
-  
-<?php 
 
-$fp = fopen("voorkeuren.csv", 'a');  //Open file for append
-fputcsv($fp, $_POST, ';', '"'); //@Optimist
-fclose($fp); //Close the file to free memory.
+    <?php
 
-?>
+    if (empty($_POST['message'])) {
+        $info = array(
+            $_POST['firstname'],
+            $_POST['lastname'],
+            $_POST['email'],
+            $_POST['tel'],
+            $_POST['select1'],
+            $_POST['select2'],
+            $_POST['select3']
+        );
 
-<div>
-    <p class="text-center">Bedankt voor uw inschrijving! </p>
-</div>
+        $fp = fopen("voorkeuren.csv", 'a');  //Open file for append
+        fputcsv($fp, $info, ';', '"'); //@Optimist
+        fclose($fp); //Close the file to free memory.
 
-<div class="container">
-    <div class="row">
-        <div class="col text-center">
-            <a class="buttton" href="index.html">Terug naar La Gare</a></button>
+        $infomessage = "Bedankt voor uw inschrijving!";
+    }
+    else {
+        $infomessage = "Er ging iets verkeerd.";
+    }
+
+    ?>
+
+    <div>
+        <p class="text-center"><?php echo $infomessage; ?></p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <a class="buttton" href="index.html">Terug naar La Gare</a></button>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 
