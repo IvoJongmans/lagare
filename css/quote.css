@@ -1,7 +1,7 @@
 .quote {
     background-color:#AA4A3C;
     font-family: 'Baskervville', serif;
-    font-size: 28px;
+    font-size: 50px;
     color: #DDCAB2;
     height: 50vh;
     margin-top: 25px;
@@ -20,4 +20,10 @@
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+@media (max-width: 780px) {
+    .quote {
+        font-size: 28px;
+    }
 }

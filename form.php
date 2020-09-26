@@ -31,7 +31,7 @@
         fputcsv($fp, $info, ';', '"'); //@Optimist
         fclose($fp); //Close the file to free memory.
 
-        $infomessage = "Bedankt voor uw inschrijving!";
+        $infomessage = "Bedankt voor uw inschrijving! E&#233;n van onze makelaars neemt spoedig contact met u op.";
     }
     else {
         $infomessage = "Er ging iets verkeerd.";
