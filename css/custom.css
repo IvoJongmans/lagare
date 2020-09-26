@@ -62,6 +62,8 @@
     font-weight: 100;
     font-size: 14px; 
     line-height: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .col-lg-7 {
