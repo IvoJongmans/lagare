@@ -26,9 +26,10 @@
     background-color:  #AA4A3C;
     color: white;
     border-radius: 0px;
-    -moz-box-shadow-bottom: 4px 4px 4px 2px black;
+    border: 1px solid white;
+    /* -moz-box-shadow-bottom: 4px 4px 4px 2px black;
     -webkit-box-shadow-bottom: 4px 4px 4px 2px black;
-    box-shadow: 4px 4px 4px 2px black;
+    box-shadow: 4px 4px 4px 2px black; */
 }
 
 #form .btn:hover {
