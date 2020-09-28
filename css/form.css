@@ -2,16 +2,15 @@
     margin-top: 25px;
     padding-top: 25px;
     /* padding-bottom: 10px; */
-    background-color: #AA4A3C;
+    /* background-color: #AA4A3C; */
     /* font-family: 'Baskervville', serif; */
-    color: white;
-    font-family: 'Baskervville', serif;
-    /* font-family: 'Noto Sans JP', sans-serif; */
+    color: black;
+    /* font-family: 'Baskervville', serif; */
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
-    /* border: 10px solid #AA4A3C;
-    border-top: none; */
+    /* border-top: none; */
 }
 
 #form .invalid-feedback {
@@ -23,10 +22,10 @@
 }
 
 #form .btn {
-    background-color:  #AA4A3C;
-    color: white;
+    background-color:  white;
+    color: black;
     border-radius: 0px;
-    border: 1px solid white;
+    border: 1px solid black;
     margin-left: -15px;
     /* -moz-box-shadow-bottom: 4px 4px 4px 2px black;
     -webkit-box-shadow-bottom: 4px 4px 4px 2px black;
@@ -34,7 +33,7 @@
 }
 
 #form .btn:hover {
-    background-color: #6b2e26;
+    background-color: grey;
 }
 
 #form a {
