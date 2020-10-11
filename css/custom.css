@@ -106,6 +106,9 @@
     .col-lg-7 .img-right {
         padding-left: 15px;
     }
+    .subquote {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 1079px) {
@@ -113,7 +116,10 @@
         margin-top: 25px;
     }
     .right-margin {
-        margin-top: 75px;
+        margin-top: 15px;
+    }
+    .subquote {
+        margin-top: 0px;
     }
 }
 
@@ -131,6 +137,6 @@
         height: 110px;
     }
     .left-image {
-        margin-top: 50px;
+        margin-top: 15px;
     }
 }
