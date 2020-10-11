@@ -32,6 +32,8 @@
 .tekstblok {
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .streep {
