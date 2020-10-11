@@ -1,9 +1,9 @@
 #download button {
     margin-top: 25px;
-    background-color: #AA4A3C;
+    background-color: white;
 	border: none;
     padding: 25px;
-    color: white;
+    color: black;
     /* font-family: 'Noto Sans JP', sans-serif; */
     font-family: 'Baskervville', serif;
     font-weight: 400;

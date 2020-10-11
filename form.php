@@ -36,8 +36,7 @@
             $_POST['email'],
             $_POST['tel'],
             $_POST['select1'],
-            $_POST['select2'],
-            $_POST['select3']
+            $_POST['select2']
         );
 
         $fp = fopen("voorkeuren.csv", 'a');  //Open file for append
