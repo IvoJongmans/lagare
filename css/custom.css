@@ -36,10 +36,17 @@
     align-items: center;
 }
 
-.streep {
+.streep-bruin {
     width: 50px;
     height: 8px;
     background-color: #DDCAB2;
+    margin-left: -25px;
+}
+
+.streep-rood {
+    width: 50px;
+    height: 8px;
+    background-color: #AA4A3C;
     margin-left: -25px;
 }
 
@@ -52,6 +59,14 @@
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 100;
     font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.subquote {
+    margin-top: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
     letter-spacing: 1px;
 }
 
