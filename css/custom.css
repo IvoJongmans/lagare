@@ -109,6 +109,9 @@
     .subquote {
         margin-top: 0px;
     }
+    .tekstblok-left {
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 1079px) {
