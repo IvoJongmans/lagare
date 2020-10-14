@@ -12,13 +12,17 @@
     /* height: 500px; */
     z-index: 999;
     background-color: white;
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid #DDCAB2;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* border: 2px solid #DDCAB2; */
 }
 
 @media screen and (max-width: 700px) {
     #toplogo {
        height: 150px;
+    }
+    .usp {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
