@@ -52,7 +52,7 @@
 
 .title {
     font-family: 'Baskervville', serif;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .subtitle {
@@ -80,8 +80,8 @@
     font-weight: 100;
     font-size: 14px; 
     line-height: 20px;
-    text-align: justify;
-    text-justify: inter-word;
+    /* text-align: justify; */
+    /* text-justify: inter-word; */
 }
 
 .col-lg-7 {
