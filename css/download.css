@@ -13,6 +13,11 @@
     width: 100%;
     min-height: 86px;
     vertical-align: middle;
+    border: 1px solid black;
+}
+
+#download button:hover {
+    border: 2px solid black;
 }
 
 #download button img {

@@ -129,6 +129,16 @@
     }
 }
 
+@media (max-width: 480px) {
+    .title {
+        font-size: 30px;
+    }
+    .subquote {
+        font-size: 15px;
+    }
+}
+
+
 @media (max-width: 380px) {
     .overlay {
         position: absolute;
