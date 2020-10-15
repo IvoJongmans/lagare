@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Noto+Sans+JP:wght@100;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/keuze.css">
+    <link rel="icon" href="images/l.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179162367-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179162367-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Gare - Laren</title>
+</head>
+
+<script>
+    $(document).ready(function(){
+
+        $("#floor1").click(function(){
+            $("#f1").css('display', 'flex');
+            $("#f2").css('display', 'none');
+            $("#f3").css('display', 'none');
+        });
+
+        $("#floor2").click(function(){
+            $("#f2").css('display', 'flex');
+            $("#f1").css('display', 'none');
+            $("#f3").css('display', 'none');
+        });
+
+        $("#floor3").click(function(){
+            $("#f3").css('display', 'flex');
+            $("#f1").css('display', 'none');
+            $("#f2").css('display', 'none');
+        });
+
+        $(".app").click(function(){
+            var app = 'app' + $(this).attr('id');
+            $('.main').hide();
+            $('#' + app).css('display', 'flex');
+        });
+
+});
+</script>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <button id="floor1">Begane Grond</button>
+            </div>
+            <div class="col-sm-4">
+                <button id="floor2">Verdieping 1</button>
+            </div>
+            <div class="col-sm-4">
+                <button id="floor3">Verdieping 2</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="f1">
+            <div class="col-sm-3">
+                <button id="11" class="app">Appartement 11</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="12" class="app">Appartement 12</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="13" class="app">Appartement 13</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="14" class="app">Appartement 14</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="f2" class="row">
+            <div class="col-sm-3">
+                <button id="21" class="app">Appartement 21</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="22" class="app">Appartement 22</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="23" class="app">Appartement 23</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="24" class="app">Appartement 24</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="f3" class="row">
+            <div class="col-sm-3">
+                <button id="31" class="app">Appartement 31</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="32" class="app">Appartement 32</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="33" class="app">Appartement 33</button>
+            </div>
+            <div class="col-sm-3">
+                <button id="34" class="app">Appartement 34</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container main" id="app11">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 11
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app12">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 12
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app13">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 13
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app14">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 14
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app21">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 21
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app22">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 22
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app23">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 23
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app24">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 24
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app31">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 31
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app32">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 32
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app33">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 33
+            </div>
+        </div>
+    </div>
+    <div class="container main" id="app34">
+        <div class="row">
+            <div class="col">
+                INFO APPARTEMENT 34
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
