@@ -37,18 +37,30 @@
             $("#f1").css('display', 'flex');
             $("#f2").css('display', 'none');
             $("#f3").css('display', 'none');
+
+            $("#fp1").css('display', 'flex');
+            $("#fp2").css('display', 'none');
+            $("#fp3").css('display', 'none');
         });
 
         $("#floor2").click(function(){
             $("#f2").css('display', 'flex');
             $("#f1").css('display', 'none');
             $("#f3").css('display', 'none');
+
+            $("#fp2").css('display', 'flex');
+            $("#fp1").css('display', 'none');
+            $("#fp3").css('display', 'none');
         });
 
         $("#floor3").click(function(){
             $("#f3").css('display', 'flex');
             $("#f1").css('display', 'none');
             $("#f2").css('display', 'none');
+
+            $("#fp3").css('display', 'flex');
+            $("#fp1").css('display', 'none');
+            $("#fp2").css('display', 'none');
         });
 
         $(".app").click(function(){
@@ -63,21 +75,30 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-6 text-center">
+            <div class="">
                 <button id="floor1">Begane Grond</button>
             </div>
-            <div class="col-sm-4">
+            <div class="">
                 <button id="floor2">Verdieping 1</button>
             </div>
-            <div class="col-sm-4">
+            <div class="">
                 <button id="floor3">Verdieping 2</button>
+            </div>
+            </div>
+            <div class="col-6">
+                <div id="fp1">Floor plan 1</div>
+                <div id="fp2">Floor plan 2</div>
+                <div id="fp3">Floor plan 3</div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row" id="f1">
             <div class="col-sm-3">
-                <button id="11" class="app">Appartement 11</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal11">
+                    APP 11
+                  </button>
             </div>
             <div class="col-sm-3">
                 <button id="12" class="app">Appartement 12</button>
@@ -93,7 +114,9 @@
     <div class="container">
         <div id="f2" class="row">
             <div class="col-sm-3">
-                <button id="21" class="app">Appartement 21</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal21">
+                    APP 21
+                  </button>
             </div>
             <div class="col-sm-3">
                 <button id="22" class="app">Appartement 22</button>
@@ -109,7 +132,9 @@
     <div class="container">
         <div id="f3" class="row">
             <div class="col-sm-3">
-                <button id="31" class="app">Appartement 31</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal31">
+                    APP 31
+                  </button>
             </div>
             <div class="col-sm-3">
                 <button id="32" class="app">Appartement 32</button>
@@ -123,13 +148,27 @@
         </div>
         
     </div>
-    <div class="container main" id="app11">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 11
+    <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal11title">INFO APP 11</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+            <ul>
+                <li>40m2</li>
+                <li>enz.</li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+            
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     <div class="container main" id="app12">
         <div class="row">
             <div class="col">
@@ -151,13 +190,27 @@
             </div>
         </div>
     </div>
-    <div class="container main" id="app21">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 21
+    <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="modal21title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal21title">INFO APP 21</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+            <ul>
+                <li>40m2</li>
+                <li>enz.</li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+            
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     <div class="container main" id="app22">
         <div class="row">
             <div class="col">
@@ -179,13 +232,27 @@
             </div>
         </div>
     </div>
-    <div class="container main" id="app31">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 31
+    <div class="modal fade" id="modal31" tabindex="-1" role="dialog" aria-labelledby="modal31title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal31title">INFO APP 31</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+            <ul>
+                <li>40m2</li>
+                <li>enz.</li>
+            </ul>
+            </div>
+            <div class="modal-footer">
+            
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     <div class="container main" id="app32">
         <div class="row">
             <div class="col">
