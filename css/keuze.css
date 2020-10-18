@@ -19,6 +19,16 @@ button {
 	display: none;
 }
 
+.modal-body img {
+	max-width:100%;
+	max-height:100%;
+}
+
+#fp1 img, #fp2 img, #fp3 img {
+	max-width:100%;
+	max-height:100%;
+}
+
 div[id*='app'] {
     display: none;
 }
