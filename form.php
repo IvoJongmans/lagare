@@ -29,6 +29,7 @@
 
     <?php
 
+    // ADD TO .CSV
     if (empty($_POST['message'])) {
         $info = array(
             $_POST['firstname'],
@@ -48,6 +49,21 @@
     } else {
         $infomessage = "Er ging iets verkeerd.";
     }
+
+    //MAIL ENTRIES
+
+    //MESSAGE
+    $msg = "
+    Naam: " . $_POST['firstname'] . " " . $_POST['lastname'] . "\n
+    E-mail: " . $_POST['email'] . "\n
+    Telefoonnummer: " . $_POST['tel'] . "\n
+    Voorkeur 1: " . $_POST['select1'] . "\n
+    Voorkeur 2: " . $_POST['select2'] . "\n
+    Datum en tijd: " . date('d-m-Y H:i:s') . "\n
+    ";
+
+    //SEND MAIL
+    mail("ivo@aquive.nl", "Inschrijving La Gare - Laren", $msg);
 
     ?>
 

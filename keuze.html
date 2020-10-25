@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Noto+Sans+JP:wght@100;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/keuze.css">
-    <link rel="icon" href="images/l.png">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179162367-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-179162367-1');
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>La Gare - Laren</title>
-</head>
-
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $("#floor1").click(function(){
+        $("#floor1").focus();
+
+        $("#floor1").click(function () {
+
+            $("#floor1").focus();
+
             $("#f1").css('display', 'flex');
             $("#f2").css('display', 'none');
             $("#f3").css('display', 'none');
@@ -43,7 +16,10 @@
             $("#fp3").css('display', 'none');
         });
 
-        $("#floor2").click(function(){
+        $("#floor2").click(function () {
+
+            $("#floor2").focus();
+
             $("#f2").css('display', 'flex');
             $("#f1").css('display', 'none');
             $("#f3").css('display', 'none');
@@ -53,7 +29,10 @@
             $("#fp3").css('display', 'none');
         });
 
-        $("#floor3").click(function(){
+        $("#floor3").click(function () {
+
+            $("#floor3").focus();
+
             $("#f3").css('display', 'flex');
             $("#f1").css('display', 'none');
             $("#f2").css('display', 'none');
@@ -63,220 +42,381 @@
             $("#fp2").css('display', 'none');
         });
 
-        $(".app").click(function(){
-            var app = 'app' + $(this).attr('id');
-            $('.main').hide();
-            $('#' + app).css('display', 'flex');
-        });
-
-});
+    });
 </script>
 
-<body>
+    <div class="container">
+        <div class="row text-center" id="f1">
+            <div class="col-lg-4">
+            </div>
+            <div class="container col-lg-8">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal11">
+                            Appartement 01
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal12">
+                            Appartement 02
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal13">
+                            Appartement 03
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal14">
+                            Appartement 04
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center" id="f2">
+            <div class="col-lg-4">
+            </div>
+            <div class="container col-lg-8">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal21">
+                            Appartement 05
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal22">
+                            Appartement 06
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal23">
+                            Appartement 07
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal24">
+                            Appartement 08
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center" id="f3">
+            <div class="col-lg-4">
+            </div>
+            <div class="container col-lg-8">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal31">
+                            Appartement 09
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal32">
+                            Appartement 10
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal33">
+                            Appartement 11
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                        <button type="button" data-toggle="modal" data-target="#modal34">
+                            Appartement 12
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-6 text-center">
-            <div class="">
-                <button id="floor1">Begane Grond</button>
+            <div class="col-md-4 col-6">
+                <div class="text-center">
+                    <button id="floor1">Begane Grond</button>
+                </div>
+                <div class="text-center">
+                    <button id="floor2">Verdieping 1</button>
+                </div>
+                <div class="text-center">
+                    <button id="floor3">Verdieping 2</button>
+                </div>
             </div>
-            <div class="">
-                <button id="floor2">Verdieping 1</button>
+            <div class="col-md-8 col-6">
+                <div id="fp1"><img class="img-responsive" src="images/plattegrond_00.jpg"></div>
+                <div id="fp2"><img class="img-responsive" src="images/plattegrond_01.jpg"></div>
+                <div id="fp3"><img class="img-responsive" src="images/plattegrond_02.jpg"></div>
             </div>
-            <div class="">
-                <button id="floor3">Verdieping 2</button>
             </div>
-            </div>
-            <div class="col-6">
-                <div id="fp1"><img class="img-responsive" src="images/00_plattegrond.jpg"></div>
-                <div id="fp2"><img class="img-responsive" src="images/01_plattegrond.jpg"></div>
-                <div id="fp3"><img class="img-responsive" src="images/02_plattegrond.jpg"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row" id="f1">
-            <div class="col-sm-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal11">
-                    APP 11
-                  </button>
-            </div>
-            <div class="col-sm-3">
-                <button id="12" class="app">Appartement 12</button>
-            </div>
-            <div class="col-sm-3">
-                <button id="13" class="app">Appartement 13</button>
-            </div>
-            <div class="col-sm-3">
-                <button id="14" class="app">Appartement 14</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div id="f2" class="row">
-            <div class="col-sm-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal21">
-                    APP 21
-                  </button>
-            </div>
-            <div class="col-sm-3">
-                <button id="22" class="app">Appartement 22</button>
-            </div>
-            <div class="col-sm-3">
-                <button id="23" class="app">Appartement 23</button>
-            </div>
-            <div class="col-sm-3">
-                <button id="24" class="app">Appartement 24</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div id="f3" class="row">
-            <div class="col-sm-3">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal31">
-                    APP 31
-                  </button>
-            </div>
-            <div class="col-sm-3">
-                <button id="32" class="app">Appartement 32</button>
-            </div>
-            <div class="col-sm-3">
-                <button id="33" class="app">Appartement 33</button>
-            </div>
-            <div class="col-sm-3">
-                <button id="34" class="app">Appartement 34</button>
-            </div>
-        </div>
-        
     </div>
     <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11title" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal11title">11</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <img src="images/app1.jpg" />
-            <ul>
-                <li>40m2</li>
-                <li>enz.</li>
-            </ul>
-            </div>
-            <div class="modal-footer">
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="container main" id="app12">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 12
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal11title">Appartement 01</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app1.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container main" id="app13">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 13
+    <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modal12title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal12title">Appartement 02</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app2.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container main" id="app14">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 14
+    <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modal13title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal13title">Appartement 03</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app3.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal14title">Appartement 04</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app4.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="modal21title" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal21title">INFO APP 21</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-            <ul>
-                <li>40m2</li>
-                <li>enz.</li>
-            </ul>
-            </div>
-            <div class="modal-footer">
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="container main" id="app22">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 22
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal21title">Appartement 05</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app5.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container main" id="app23">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 23
+    <div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-labelledby="modal22title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal22title">Appartement 06</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app6.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container main" id="app24">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 24
+    <div class="modal fade" id="modal23" tabindex="-1" role="dialog" aria-labelledby="modal23title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal23title">Appartement 07</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app7.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal24" tabindex="-1" role="dialog" aria-labelledby="modal24title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal24title">Appartement 08</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app8.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="modal31" tabindex="-1" role="dialog" aria-labelledby="modal31title" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modal31title">INFO APP 31</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-            <ul>
-                <li>40m2</li>
-                <li>enz.</li>
-            </ul>
-            </div>
-            <div class="modal-footer">
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="container main" id="app32">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 32
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal31title">Appartement 09</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app9.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container main" id="app33">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 33
+    <div class="modal fade" id="modal32" tabindex="-1" role="dialog" aria-labelledby="modal32title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal32title">Appartement 10</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app10.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
-    <div class="container main" id="app34">
-        <div class="row">
-            <div class="col">
-                INFO APPARTEMENT 34
+    <div class="modal fade" id="modal33" tabindex="-1" role="dialog" aria-labelledby="modal33title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal33title">Appartement 11</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app11.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modal34" tabindex="-1" role="dialog" aria-labelledby="modal34title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal34title">Appartement 12</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/app12.jpg" />
+                    <ul>
+                        <li>40m2</li>
+                        <li>enz.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
 
-
-</body>
-
-</html>
+                </div>
+            </div>
+        </div>
+    </div>
