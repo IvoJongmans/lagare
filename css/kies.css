@@ -1,0 +1,80 @@
+#kiezen {
+    margin-top: 75px;
+}
+
+#kiezen button {
+    background-color: white;
+    /* padding: 25px; */
+    color: black;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+    /* font-size: 13px; */
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    min-height: 86px;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+#kiezen button:hover {
+    border: 2px solid black;
+}
+
+#kiezen .selected {
+    color: white;
+    background-color: black;
+}
+
+#eerste_verdieping, #tweede_verdieping {
+    display: none;
+}
+
+/* MODAL STYLING */
+
+.close {
+    width: 15px !important;
+    border: none !important;
+    background-color: transparent !important;
+    margin-right: 10px !important;
+}
+
+.modal-header {
+    border-bottom: none;
+    color: white;
+    letter-spacing: 1.5px;
+    background-color: #AD867B;
+}
+
+.modal-header h5 {}
+
+.modal-title {
+    font-size: 30px;
+}
+
+.modal-content {
+    /* background-color: #AD867B; */
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.modal-body p {
+    margin-top: 12px;
+    margin-left: 16px;
+    color: black;
+    line-height: 1.9;
+}
+
+@media screen and (max-width: 1199px) {
+    #kiezen {
+        display: none;
+    }
+}

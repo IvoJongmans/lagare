@@ -1,4 +1,4 @@
-button {
+#keuzeblok .row button {
     background-color: white;
     border: none;
     /* padding: 25px; */
@@ -15,11 +15,11 @@ button {
     border: 1px solid black;
 }
 
-button:hover {
+#keuzeblok .row button:hover {
 	border: 2px solid black;
 }
 
-button:focus {
+#keuzeblok .row button:focus {
 	outline: none;
 	background-color: lightgrey;
   }
@@ -55,28 +55,39 @@ div[id*='app'] {
 
 /* MODAL STYLING */
 
+.modal-header {
+	border-bottom: none;
+	color: white;
+	letter-spacing: 1.5px;
+	background-color: #AD867B;
+}
+
+.modal-header h5 {
+
+}
+
+.modal-title {
+	font-size: 30px;
+}
+
+.modal-content {
+	/* background-color: #AD867B; */
+}
+
+.modal-body {
+	padding: 0;
+}
+
 .modal-body img {
 	max-width:100%;
 	max-height:100%;
 }
 
 .modal-body p {
-	margin-left: 28px;
-}
-.close {
-	width: 50px;
-}
-
-.close:hover {
-	border: none;
-}
-
-.modal{
-	font-family: 'Baskervville', serif;
-}
-
-.modal-title {
-	font-size: 30px;
+	margin-top: 12px;
+	margin-left: 16px;
+	color: black;
+	line-height: 1.9;
 }
 
 @media screen and (max-width: 1199px) {

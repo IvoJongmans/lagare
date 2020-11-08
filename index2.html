@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/quote.css">
     <link rel="stylesheet" href="css/keuze.css">
+    <link rel="stylesheet" href="css/kies.css">
     <link rel="icon" href="images/l.png">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -198,460 +199,444 @@
             </div>
         </div>
     </div>
+
     <script>
+
         $(document).ready(function () {
+
+            // $('.selected').css('color','white');
+            // $('.selected').css('background-color','black');
     
-            $("#floor1").focus();
+        //   $('#btn_begane_grond').focus();
     
-            $("#floor1").click(function () {
+          $('#btn_begane_grond').click(function () {
+            $('#btn_eerste_verdieping').removeClass('selected');
+            $('#btn_begane_grond').addClass('selected');
+            $('#btn_tweede_verdieping').removeClass('selected');
+
+            $('#begane_grond').css('display', 'block');
+            $('#eerste_verdieping').css('display', 'none');
+            $('#tweede_verdieping').css('display', 'none');
+          })
     
-                $("#floor1").focus();
+          $('#btn_eerste_verdieping').click(function () {
+            $('#btn_eerste_verdieping').addClass('selected');
+            $('#btn_begane_grond').removeClass('selected');
+            $('#btn_tweede_verdieping').removeClass('selected');
+
+            $('#eerste_verdieping').css('display', 'block');
+            $('#tweede_verdieping').css('display', 'none');
+            $('#begane_grond').css('display', 'none');
+          })
     
-                $("#f1").css('display', 'flex');
-                $("#f2").css('display', 'none');
-                $("#f3").css('display', 'none');
-    
-                $("#fp1").css('display', 'flex');
-                $("#fp2").css('display', 'none');
-                $("#fp3").css('display', 'none');
-            });
-    
-            $("#floor2").click(function () {
-    
-                $("#floor2").focus();
-    
-                $("#f2").css('display', 'flex');
-                $("#f1").css('display', 'none');
-                $("#f3").css('display', 'none');
-    
-                $("#fp2").css('display', 'flex');
-                $("#fp1").css('display', 'none');
-                $("#fp3").css('display', 'none');
-            });
-    
-            $("#floor3").click(function () {
-    
-                $("#floor3").focus();
-    
-                $("#f3").css('display', 'flex');
-                $("#f1").css('display', 'none');
-                $("#f2").css('display', 'none');
-    
-                $("#fp3").css('display', 'flex');
-                $("#fp1").css('display', 'none');
-                $("#fp2").css('display', 'none');
-            });
-    
-            $(".app").click(function () {
-                var app = 'app' + $(this).attr('id');
-                $('.main').hide();
-                $('#' + app).css('display', 'flex');
-            });
+          $('#btn_tweede_verdieping').click(function () {
+            $('#btn_eerste_verdieping').removeClass('selected');
+            $('#btn_begane_grond').removeClass('selected');
+            $('#btn_tweede_verdieping').addClass('selected');
+
+            $('#tweede_verdieping').css('display', 'block');
+            $('#begane_grond').css('display', 'none');
+            $('#eerste_verdieping').css('display', 'none');
+          })
     
         });
-    </script>
     
-    <div id="keuzeblok">
+    
+      </script>
+    
+      <div id="kiezen">
         <div class="container">
-            <div class="row text-center" id="f1">
-                <div class="col-lg-2">
-                </div>
-                <div class="container col-lg-10">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal11">
-                                Appartement 01
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal12">
-                                Appartement 02
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal13">
-                                Appartement 03
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal14">
-                                Appartement 04
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          <div class="row text-center">
+            <div class="col-4"><button id="btn_begane_grond" class="selected">Begane Grond</button></div>
+            <div class="col-4"><button id="btn_eerste_verdieping">Eerste Verdieping</button></div>
+            <div class="col-4"><button id="btn_tweede_verdieping">Tweede Verdieping</button></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center text-semi" style="padding: 10px;">
+              KLIK OP DE APPARTEMENTNUMMERS VOOR EEN GEDETAILLEERD OVERZICHT
             </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="row text-center" id="f2">
-                <div class="col-lg-2">
-                </div>
-                <div class="container col-lg-10">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal21">
-                                Appartement 05
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal22">
-                                Appartement 06
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal23">
-                                Appartement 07
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal24">
-                                Appartement 08
-                            </button>
-                        </div>
-                    </div>
-                </div>
+    
+        <div class="container" id="begane_grond">
+          <div class="row">
+            <div class="col-12" style="text-align : center;">
+              <img src="images/begane_grond.png" usemap="#image-map1">
+    
+              <map name="image-map1">
+                <area target="" alt="" title="" coords="338,415,58" shape="circle" onclick="toggle1()">
+                <area target="" alt="" title="" coords="214,417,57" shape="circle" onclick="toggle2()">
+                <area target="" alt="" title="" coords="213,225,62" shape="circle" onclick="toggle3()">
+                <area target="" alt="" title="" coords="434,225,59" shape="circle" onclick="toggle4()">
+              </map>
             </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="row text-center" id="f3">
-                <div class="col-lg-2">
-                </div>
-                <div class="container col-lg-10">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal31">
-                                Appartement 09
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal32">
-                                Appartement 10
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal33">
-                                Appartement 11
-                            </button>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                            <button type="button" data-toggle="modal" data-target="#modal34">
-                                Appartement 12
-                            </button>
-                        </div>
-                    </div>
-                </div>
+    
+        <div class="container" id="eerste_verdieping">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="images/eerste_verdieping.png" usemap="#image-map2">
+    
+              <map name="image-map2">
+                <area target="" alt="" title="" coords="338,415,58" shape="circle" onclick="toggle5()">
+                <area target="" alt="" title="" coords="214,417,57" shape="circle" onclick="toggle6()">
+                <area target="" alt="" title="" coords="213,225,62" shape="circle" onclick="toggle7()">
+                <area target="" alt="" title="" coords="434,225,59" shape="circle" onclick="toggle8()">
+              </map>
             </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="row" id="floor_selection">
-                <div class="col-md-2 col-12">
-                    <div class="text-center">
-                        <button id="floor1">Begane Grond</button>
-                    </div>
-                    <div class="text-center">
-                        <button id="floor2">Verdieping 1</button>
-                    </div>
-                    <div class="text-center">
-                        <button id="floor3">Verdieping 2</button>
-                    </div>
-                </div>
-                <div class="col-md-10 col-6">
-                    <div id="fp1"><img class="img-responsive" src="images/plattegrond_00.jpg"></div>
-                    <div id="fp2"><img class="img-responsive" src="images/plattegrond_01.jpg"></div>
-                    <div id="fp3"><img class="img-responsive" src="images/plattegrond_02.jpg"></div>
-                </div>
-                </div>
+    
+        <div class="container" id="tweede_verdieping">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="images/tweede_verdieping.png" usemap="#image-map3">
+    
+              <map name="image-map3">
+                <area target="" alt="" title="" coords="338,415,58" shape="circle" onclick="toggle9()">
+                <area target="" alt="" title="" coords="214,417,57" shape="circle" onclick="toggle10()">
+                <area target="" alt="" title="" coords="213,225,62" shape="circle" onclick="toggle11()">
+                <area target="" alt="" title="" coords="434,225,59" shape="circle" onclick="toggle12()">
+              </map>
+            </div>
+          </div>
         </div>
+    
         <div class="modal fade" id="modal11" tabindex="-1" role="dialog" aria-labelledby="modal11title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal11title">Appartement 01</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app1.jpg" />
-                        <p>
-                            Woonoppervlakte: 101m2 <br/>
-                            Buitenruimte: 19m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 12,5m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="text-semi" id="modal11title">APPARTEMENT 01.<br><span class="subtitle">BEGANE
+                    GROND</span><br><br><span class="subtitle">ZUID-OOST</span></h5>
     
-                    </div>
-                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="images/app1.jpg" />
+                <p class="text">
+                  Woonoppervlakte: 101m&#178; <br />
+                  Plafondhoogte: 3,25m <br />
+                  Buitenruimte: 19m&#178; <br />
+                  Berging: 7m&#178; <br />
+                  Parking: 12,5m&#178; <br />
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+    
         <div class="modal fade" id="modal12" tabindex="-1" role="dialog" aria-labelledby="modal12title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal12title">Appartement 02</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app2.jpg" />
-                        <p>
-                            Woonoppervlakte: 105m2 <br/>
-                            Buitenruimte: 18m2 <br/>
-                            Berging: 77m2 <br/>
-                            Parking: 12,57m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 02.<br><span class="subtitle">BEGANE
+                      GROND</span><br><br><span class="subtitle">ZUID-WEST</span></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app2.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 105m&#178; <br/>
+                          Plafondhoogte: 3,25m <br />
+                          Buitenruimte: 18m&#178; <br/>
+                          Berging: 77m&#178; <br/>
+                          Parking: 12,57m&#178;  <br/>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modal13title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 03.<br><span class="subtitle">BEGANE
+                      GROND</span><br><br><span class="subtitle">NOORD-WEST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app3.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 185m&#178; <br/>
+                          Plafondhoogte: 3,25m <br />
+                          Buitenruimte: 16m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 25m&#178;  <br/>
+                      </p>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 04.<br><span class="subtitle">BEGANE
+                      GROND</span><br><br><span class="subtitle">NOORD-OOST</span></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app4.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 200m&#178; <br/>
+                          Plafondhoogte: 3,25m <br />
+                          Buitenruimte: 16m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 25m&#178;  <br/>
+                      </p>
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+      
+      <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="modal21title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 05.<br><span class="subtitle">EERSTE ETAGE</span><br><br><span class="subtitle">ZUID-OOST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app5.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 101m&#178; <br/>
+                          Plafondhoogte: 3,1m <br />
+                          Buitenruimte: 19m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 12,5m&#178;  <br/>
+                      </p>
+                  </div>
+             
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-labelledby="modal22title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 06.<br><span class="subtitle">EERSTE ETAGE</span><br><br><span class="subtitle">ZUID-WEST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app6.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 105m&#178; <br/>
+                          Plafondhoogte: 3,1m <br />
+                          Buitenruimte: 18m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 12,5m&#178;  <br/>
+                      </p>
+                  </div>
+               
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal23" tabindex="-1" role="dialog" aria-labelledby="modal23title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 07.<br><span class="subtitle">EERSTE ETAGE</span><br><br><span class="subtitle">NOORD-WEST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app7.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 186m&#178; <br/>
+                          Plafondhoogte: 3,1m <br />
+                          Buitenruimte: 16m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 25m&#178;  <br/>
+                      </p>
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal24" tabindex="-1" role="dialog" aria-labelledby="modal24title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 08.<br><span class="subtitle">EERSTE ETAGE</span><br><br><span class="subtitle">NOORD-OOST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app8.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 180m&#178; <br/>
+                          Plafondhoogte: 3,1m <br />
+                          Buitenruimte: 31m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 25m&#178;  <br/>
+                      </p>
+                  </div>
+               
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal31" tabindex="-1" role="dialog" aria-labelledby="modal31title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 09.<br><span class="subtitle">TWEEDE ETAGE</span><br><br><span class="subtitle">ZUID-OOST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app9.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 83m&#178; <br/>
+                          Plafondhoogte: 2,85m <br />
+                          Buitenruimte: 11m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 12,5m&#178;  <br/>
+                      </p>
+                  </div>
+          
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal32" tabindex="-1" role="dialog" aria-labelledby="modal32title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 10.<br><span class="subtitle">TWEEDE ETAGE</span><br><br><span class="subtitle">ZUID-WEST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app10.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 86m&#178; <br/>
+                          Plafondhoogte: 2,85m <br />
+                          Buitenruimte: 11m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 12,5m&#178;  <br/>
+                      </p>
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal33" tabindex="-1" role="dialog" aria-labelledby="modal33title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 11.<br><span class="subtitle">TWEEDE ETAGE</span><br><br><span class="subtitle">NOORD-WEST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app11.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 172m&#178; <br/>
+                          Plafondhoogte: 2,85m <br />
+                          Buitenruimte: 21m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 25m&#178;  <br/>
+                      </p>
+                  </div>
+     
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="modal34" tabindex="-1" role="dialog" aria-labelledby="modal34title" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="text-semi" id="modal11title">APPARTEMENT 12.<br><span class="subtitle">TWEEDE ETAGE</span><br><br><span class="subtitle">NOORD-OOST</span></h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="images/app12.jpg" />
+                      <p class="text">
+                          Woonoppervlakte: 146m&#178; <br/>
+                          Plafondhoogte: 2,85m <br />
+                          Buitenruimte: 17m&#178; <br/>
+                          Berging: 7m&#178; <br/>
+                          Parking: 25m&#178;  <br/>
+                      </p>
+                  </div>
+       
+              </div>
+          </div>
+      </div>
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal13" tabindex="-1" role="dialog" aria-labelledby="modal13title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal13title">Appartement 03</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app3.jpg" />
-                        <p>
-                            Woonoppervlakte: 185m2 <br/>
-                            Buitenruimte: 16m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 25m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+      </div>
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="modal14title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal14title">Appartement 04</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app4.jpg" />
-                        <p>
-                            Woonoppervlakte: 200m2 <br/>
-                            Buitenruimte: 16m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 25m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="modal fade" id="modal21" tabindex="-1" role="dialog" aria-labelledby="modal21title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal21title">Appartement 05</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app5.jpg" />
-                        <p>
-                            Woonoppervlakte: 101m2 <br/>
-                            Buitenruimte: 19m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 12,5m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+      <script>
+        function toggle1() {
+          $('#modal11').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal22" tabindex="-1" role="dialog" aria-labelledby="modal22title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal22title">Appartement 06</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app6.jpg" />
-                        <p>
-                            Woonoppervlakte: 105m2 <br/>
-                            Buitenruimte: 18m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 12,5m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle2() {
+          $('#modal12').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal23" tabindex="-1" role="dialog" aria-labelledby="modal23title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal23title">Appartement 07</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app7.jpg" />
-                        <p>
-                            Woonoppervlakte: 186m2 <br/>
-                            Buitenruimte: 16m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 25m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle3() {
+          $('#modal13').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal24" tabindex="-1" role="dialog" aria-labelledby="modal24title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal24title">Appartement 08</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app8.jpg" />
-                        <p>
-                            Woonoppervlakte: 180m2 <br/>
-                            Buitenruimte: 31m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 25m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle4() {
+          $('#modal14').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal31" tabindex="-1" role="dialog" aria-labelledby="modal31title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal31title">Appartement 09</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app9.jpg" />
-                        <p>
-                            Woonoppervlakte: 83m2 <br/>
-                            Buitenruimte: 11m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 12,5m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle5() {
+          $('#modal21').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal32" tabindex="-1" role="dialog" aria-labelledby="modal32title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal32title">Appartement 10</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app10.jpg" />
-                        <p>
-                            Woonoppervlakte: 86m2 <br/>
-                            Buitenruimte: 11m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 12,5m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle6() {
+          $('#modal22').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal33" tabindex="-1" role="dialog" aria-labelledby="modal33title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal33title">Appartement 11</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app11.jpg" />
-                        <p>
-                            Woonoppervlakte: 172m2 <br/>
-                            Buitenruimte: 21m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 25m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle7() {
+          $('#modal23').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modal34" tabindex="-1" role="dialog" aria-labelledby="modal34title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal34title">Appartement 12</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="images/app12.jpg" />
-                        <p>
-                            Woonoppervlakte: 146m2 <br/>
-                            Buitenruimte: 17m2 <br/>
-                            Berging: 7m2 <br/>
-                            Parking: 25m2  <br/>
-                        </p>
-                    </div>
-                    <div class="modal-footer">
+        function toggle8() {
+          $('#modal24').modal('show');
+        }
     
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        function toggle9() {
+          $('#modal31').modal('show');
+        }
+    
+        function toggle10() {
+          $('#modal32').modal('show');
+        }
+    
+        function toggle11() {
+          $('#modal33').modal('show');
+        }
+    
+        function toggle12() {
+          $('#modal34').modal('show');
+        }
+      </script>
 
     <div id="carouselExampleIndicators" class="carousel slide container-fluid" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -711,13 +696,13 @@
     <div class="container-fluid" id="download">
         <div class="row">
             <div class="col-lg-4 text-center">
-                <button type="submit">Ontdek appartement A <img src="images/360black.png" /></button>
+                <button type="submit">Ontdek appartement 2 <img src="images/360black.png" /></button>
             </div>
             <div class="col-lg-4 text-center">
-                <button type="submit">Ontdek appartement B <img src="images/360black.png" /></button>
+                <button type="submit">Ontdek appartement 8 <img src="images/360black.png" /></button>
             </div>
             <div class="col-lg-4 text-center">
-                <button type="submit">Ontdek appartement C <img src="images/360black.png" /></button>
+                <button type="submit">Ontdek appartement 11 <img src="images/360black.png" /></button>
             </div>
         </div>
     </div>
