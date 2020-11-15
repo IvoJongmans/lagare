@@ -102,6 +102,13 @@
     text-decoration: none;
 }
 
+#lowres {
+    font-family: 'Baskervville', serif;
+    font-size: 12px;
+    position: relative;
+    top: -30px;
+}
+
 @media (max-width: 1090px) {
     .col-lg-7 .img-right {
         padding-left: 15px;
