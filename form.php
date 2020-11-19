@@ -63,7 +63,7 @@
     ";
 
     //SEND MAIL
-    mail("ivo@aquive.nl,hello@artoflivingbymar.com,laren@kappelle.nl", "Inschrijving La Gare - Laren", $msg);
+    mail("ivo@aquive.nl", "Inschrijving La Gare - Laren", $msg);
 
     ?>
 
