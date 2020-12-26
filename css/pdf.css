@@ -1,0 +1,36 @@
+#pdf {
+    display: none;
+}
+
+#pdf button {
+    margin-top: 25px;
+    background-color: white;
+	border: none;
+    /* padding: 25px; */
+    color: black;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+    /* font-size: 13px; */
+    font-size: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    min-height: 86px;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+#pdf button:hover {
+    border: 2px solid black;
+}
+
+#pdf button img {
+    height: 36px;
+}
+
+@media screen and (max-width: 767px) {
+    #pdf {
+        display: block;
+    }
+}
+
